@@ -64,7 +64,25 @@
 
 <script type="text/javascript">
 	// your solution here
-
+  $(".bg-purple").click(function(event) {
+      $(".bg-purple").hide();
+    });
+  $(".bg-green").click(function(event) {
+      $(".bg-green").hide();
+      $(".bg-blue").hide();
+    });
+  $("#gradient-circle").hover(function(event) {
+      $("#gradient-circle").hide();
+    });
+$(".p2-border").click(function(event) {
+      if($( this ).hasClass("bg-orange")) {
+        $(".p2-border").hide();
+      }
+    });
+  $(".btn").click(function(event) {
+      $(":hidden").not("script").not("title").show();
+    });
+  
 </script>
 </body>
 </html>

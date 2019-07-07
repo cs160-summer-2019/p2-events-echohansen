@@ -39,9 +39,17 @@
 
 
 <script type="text/javascript">
-
 	// your solution here
-
+  //setInterval(function() {$(".shape-container").append("<div class="p2-circle bg-blue"></div>");}, 1000);
+ $(document).ready(function() {
+  var add = setInterval(function() {$(".shape-container").append("<div class='p2-circle bg-blue'></div>");}, 1000);
+  
+   $(".btn").click(function() {
+    clearInterval(add);
+   });
+   
+ });
+  
 </script>
 </body>
 </html>
